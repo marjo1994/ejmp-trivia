@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TriviaLab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+
+	<!-- sección de bienvenida -->
+
+		<div class="container1" id="container1">
+			<h1>!Bienvenidos a TriviaLab!</h1>
+			<img src="img/cerebro.png"  alt="img" width="150px" height="150px">
+			<div>
+				<form>
+					<label for="name">¿Cuál es tu Nombre?</label>
+					<input type="text" id="name"  placeholder="Ingresa tu Nombre"/>
+				</form>
+				<button type="button" id="btnB">Siguiente</button>
+			</div>
+		</div>
+
+	<!-- sección de saludo y elección del tema -->
+
+		<div class="container1" id="container2">
+			<h1 id="saludo"></h1>
+			<p>¿Que categoria prefieres?</p>
+			<div>
+				<div class="left">
+					<img src="img/gastronomia.png"  alt="img" width="150px" height="150px"><br><br>
+					<button type="button" id="btnGast">GASTRONOMÍA</button>
+				</div>
+				<div class="right">
+					<img src="img/musica.png"  alt="img" width="150px" height="150px"><br><br>
+					<button type="button" id="btnMus">MÚSICA</button>
+				</div>
+			</div>
+		</div>
+
+		<!--sección de preguntas de gastronomía-->
+
+		<div class="preguntas" id="preguntasGast">
+			<h1>¿Cuánto sabes de gastronomia?</h1>
+			<div>
+				<form>
+					<p>Tengo ají amarillo, cebolla, papas, carne y vinagre. Algunos me ponen perejil,¿quién soy?</p>
+					<input type="radio" name="pregunta1" id="p11">
+					<label for="p11">Lomo Saltado</label>
+
+					<input type="radio" name="pregunta1" id="p12">
+					<label for="p12">Aji de Gallina</label>
+
+					<input type="radio" name="pregunta1" id="p13">
+					<label for="p13"> Arroz Chaufa</label>
+				</form>
+
+				<form>
+					<p> Llevo alberjitas,zanahoria y mi arroz tiene un color muy particular.Algunos me poner pollo o pato,¿quién soy?.</p>
+					<input type="radio" name="pregunta2" id="p21">
+					<label for="p21">Chanfainita</label>
+
+					<input type="radio" name="pregunta2" id="p22">
+					<label for="p22">Seco con Frejoles</label>
+
+					<input type="radio" name="pregunta2" id="p23">
+					<label for="p23">Arroz con Pollo.</label>
+				</form>
+
+				<form>
+					<p> Me hacen con papa en cuadraditos algunos me ponen pollo o mondongo,¿quién soy?.</p>
+					<input type="radio" name="pregunta3" id="p31">
+					<label for="p31">Lomo Saltado.</label>
+
+					<input type="radio" name="pregunta3" id="p32">
+					<label for="p32">Cau Cau.</label>
+
+					<input type="radio" name="pregunta3" id="p33">
+					<label for="p33">Mondonguito a la Italiana</label>
+				</form>
+				<button type="button" id="resGast">Resultados</button>
+			</div>
+		</div>
+
+		<!-- sección de resultados del cuestionario de gastronomía -->
+
+		<div class="preguntas" id="resultadoGast">
+			<p id="puntajeGast"></p>
+			<h1>¡Vamos a jugar, otra vez!</h1>
+			<button type="button" id="btnG">Jugar de nuevo</button>
+		</div>
+
+		<!-- sección de preguntas de música -->
+
+		<div class="preguntas" id="preguntasMus">
+			<h1>¿Cuánto sabes de música?</h1>
+			<div>
+				<form>
+					<p>¿Cuántas veces Eva Ayllon fue nominada a los premios Grammy Latinos?</p>
+					<input type="radio" name="pregunta1b" id="q11">
+					<label for="q11">4</label>
+
+					<input type="radio" name="pregunta1b" id="q12">
+					<label for="q12">6</label>
+
+					<input type="radio" name="pregunta1b" id="q13">
+					<label for="q13">3</label>
+				</form>
+
+				<form>
+					<p>¿Cuál es su verdadero nombre de Bartola?</p>
+					<input type="radio" name="pregunta2b" id="q21">
+					<label for="q21">Maria Gonzales</label>
+
+					<input type="radio" name="pregunta2b" id="q22">
+					<label for="q22">Esther Davila</label>
+
+					<input type="radio" name="pregunta2b" id="q23">
+					<label for="q23">Marlyn Terrenos</label>
+				</form>
+
+				<form>
+					<p>¿Cuándo murió el Zambo Cavero?</p>
+					<input type="radio" name="pregunta3b" id="q31">
+					<label for="q31">09/10/2009</label>
+
+					<input type="radio" name="pregunta3b" id="q32">
+					<label for="q32">12/05/2010</label>
+
+					<input type="radio" name="pregunta3b" id="q33">
+					<label  for="q33">23/12/2012</label>
+				</form>
+				<button type="button" id="resMus">Resultados</button>
+			</div>
+		</div>
+
+		<!-- sección de resultados del cuestionario de música -->
+
+		<div class="preguntas" id="resultadoMus">
+			<p id="puntajeMus"></p>
+			<h1>¡Vamos a jugar, otra vez!</h1>
+			<button type="button" id="btnM">Jugar de nuevo</button>
+		</div>
+
+		<script src="app.js"></script>
+
+	</body>
+</html>
